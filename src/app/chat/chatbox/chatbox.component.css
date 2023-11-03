@@ -1,0 +1,11 @@
+textarea {
+  resize: none;
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+small {
+  color: gray;
+}

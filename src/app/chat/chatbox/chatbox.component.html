@@ -1,0 +1,31 @@
+<div class="col">
+  <div class="row"><small>Person 1</small></div>
+  <form
+    [formGroup]="chatForm"
+    (ngSubmit)="onSend(chatForm, formDirective)"
+    #formDirective="ngForm"
+  >
+    <mat-form-field class="w-100">
+      <textarea
+        placeholder="Enter your message here..."
+        formControlName="message"
+        matInput
+        rows="3"
+      ></textarea>
+      <mat-error *ngIf="chatForm.get('message')?.hasError('required')"
+        >You must enter a message</mat-error
+      >
+    </mat-form-field>
+    <div class="flex text-end">
+      <button
+        class="flex-shrink-1 rounded-5"
+        mat-raised-button
+        color="accent"
+        [disabled]="chatForm.invalid"
+      >
+        <mat-icon fontIcon="keyboard_arrow_right" />
+        Send
+      </button>
+    </div>
+  </form>
+</div>
