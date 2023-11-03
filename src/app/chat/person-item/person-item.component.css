@@ -1,0 +1,8 @@
+.mat-mdc-list-item.mdc-list-item--with-three-lines
+  .mat-mdc-list-item-line.mdc-list-item__secondary-text {
+  white-space: normal;
+}
+
+.mdc-list-item.mdc-list-item--with-three-lines {
+  height: inherit;
+}
