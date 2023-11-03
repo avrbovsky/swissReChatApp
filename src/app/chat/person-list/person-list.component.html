@@ -2,11 +2,15 @@
   <p class="text-secondary">Chat Window</p>
   <div class="list-container d-flex justify-content-between flex-column h-100">
     <mat-list role="list">
-      <person-item />
-      <person-item />
+      <person-item *ngFor="let message of messages" [message]="message" />
     </mat-list>
     <div class="text-end">
-      <button class="mb-2 mx-3 rounded-5" mat-raised-button color="primary">
+      <button
+        class="mb-2 mx-3 rounded-5"
+        mat-raised-button
+        color="primary"
+        (click)="onClear()"
+      >
         <mat-icon fontIcon="close" />
         CLEAR CHAT WINDOW
       </button>

@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css'],
 })
-export class ChatComponent {}
+export class ChatComponent {
+  index = 1;
+
+  persons: string[] = [];
+
+  onAddNewPerson = () => {
+    this.persons.push(`Person ${this.index}`);
+    this.index += 1;
+  };
+}

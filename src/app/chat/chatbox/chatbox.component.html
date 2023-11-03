@@ -1,5 +1,7 @@
 <div class="col">
-  <div class="row"><small>Person 1</small></div>
+  <div class="row">
+    <small>{{ personName }}</small>
+  </div>
   <form
     [formGroup]="chatForm"
     (ngSubmit)="onSend(chatForm, formDirective)"

@@ -8,6 +8,8 @@
       class="col-sm-6 col-md-5 col-lg-4 col-xl-2 rounded-5"
       mat-raised-button
       color="primary"
+      [disabled]="this.index > 9"
+      (click)="onAddNewPerson()"
     >
       <mat-icon fontIcon="add" />
       ADD NEW PERSON
@@ -16,8 +18,7 @@
   <mat-divider class="border-bottom-2 mb-2" />
   <div class="row">
     <div class="col-8 chatGrid">
-      <chatbox />
-      <chatbox />
+      <chatbox *ngFor="let name of persons" [personName]="name" />
     </div>
     <div class="col-4">
       <person-list />

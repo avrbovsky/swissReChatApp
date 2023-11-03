@@ -1,11 +1,6 @@
 <mat-list-item role="listitem">
-  <mat-icon matListItemIcon>home</mat-icon>
-  <span matListItemTitle>Person 1</span>
-  <span matListItemLine class="wrap-text">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam
-    quibusdam quo rem recusandae deleniti provident placeat modi voluptate
-    maiores dolor, dignissimos, earum eligendi pariatur ipsa facilis beatae nemo
-    explicabo.
-  </span>
+  <mat-icon matListItemIcon>bookmark</mat-icon>
+  <span matListItemTitle>{{ message.sender }}</span>
+  <span matListItemLine class="wrap-text"> {{ message.message }} </span>
   <mat-divider matListItemLine class="mt-3"></mat-divider>
 </mat-list-item>
