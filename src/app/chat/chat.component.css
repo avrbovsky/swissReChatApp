@@ -2,6 +2,10 @@
   border-top-color: black;
 }
 
+div > .d-flex > button {
+  height: 48px;
+}
+
 .chatGrid {
   display: grid;
   grid-gap: 15px;

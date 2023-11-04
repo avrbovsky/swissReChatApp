@@ -5,7 +5,3 @@ textarea {
 textarea::placeholder {
   color: black;
 }
-
-small {
-  color: gray;
-}

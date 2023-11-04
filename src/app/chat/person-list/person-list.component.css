@@ -1,3 +1,11 @@
 .list-container {
   box-shadow: 0px 2px 3px rgb(94, 94, 94);
+  max-height: 650px;
+}
+
+.history-list {
+  max-height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
 }

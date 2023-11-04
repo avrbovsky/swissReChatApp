@@ -1,7 +1,7 @@
 <div class="h-100">
   <p class="text-secondary">Chat Window</p>
   <div class="list-container d-flex justify-content-between flex-column h-100">
-    <mat-list role="list">
+    <mat-list role="list" class="history-list">
       <person-item *ngFor="let message of messages" [message]="message" />
     </mat-list>
     <div class="text-end">
