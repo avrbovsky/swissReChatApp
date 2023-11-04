@@ -1,0 +1,30 @@
+div {
+  background-color: #673ab7;
+  background: radial-gradient(#4527a0, #673ab7);
+}
+
+div > div {
+  background: transparent;
+}
+
+div > h1 {
+  font-size: 150px;
+}
+
+div > h2 {
+  font-size: 70px;
+  max-width: 300px;
+}
+
+.mat-divider.mat-divider-vertical {
+  border-right-color: white;
+  border-right-width: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  margin-top: 10px;
+  color: white;
+  font-size: xx-large;
+}
